@@ -3,6 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import iconList from '../assets/images/icon-list.svg';
 
 const FormWrapper = styled.section`
   width: 376px;
@@ -43,7 +44,7 @@ const FormWrapper = styled.section`
     margin-bottom: 40px;
   }
   ul li {
-    background: url('/src/assets/images/icon-list.svg') no-repeat left center;
+    background: url(${iconList}) no-repeat left center;
     background-size: 21px;
     padding: 5px 10px 10px 37px;
     list-style: none;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import FormSection from './FormSection';
+import ilustration from '../assets/images/ilustration.svg';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
 const SvgWrapper = styled.div`
   width: 400px;
   height: 593px;
-  background-image: url('/src/assets/images/ilustration.svg');
+  background-image: url(${ilustration});
   border-radius: var(--border-radius-2);
 
   @media (max-width: 768px) {
