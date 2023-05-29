@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  box-shadow: 0px 8px 0px #000000;
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;

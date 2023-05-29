@@ -29,6 +29,9 @@ const ThankyouWrapper = styled.div`
     cursor: pointer;
     margin-top: 1.3rem;
     align-self: flex-end;
+    :hover {
+      background: linear-gradient(45deg, #1b7a6f, #1dbba9);
+    }
   }
   @media (max-width: 600px) {
     height: 100vh;

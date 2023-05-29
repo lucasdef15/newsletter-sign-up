@@ -7,7 +7,7 @@ import iconList from '../assets/images/icon-list.svg';
 
 const FormWrapper = styled.section`
   width: 376px;
-  align-self: center;
+  margin-top: 32.5px;
   margin-left: 30px;
 
   @media (max-width: 768px) {
@@ -60,6 +60,7 @@ const FormWrapper = styled.section`
     font-weight: bold;
     font-size: 12px;
   }
+
   button {
     width: 100%;
     border: none;
@@ -72,6 +73,9 @@ const FormWrapper = styled.section`
     border-radius: var(--border-radius-3);
     white-space: nowrap;
     cursor: pointer;
+    :hover {
+      background: linear-gradient(45deg, #1b7a6f, #1dbba9);
+    }
   }
 `;
 
@@ -82,9 +86,10 @@ const Input = styled.input`
   border-radius: var(--border-radius-3);
   border: 1px solid ${(props) => (props.error ? '#ff6155' : '#c5c5ca')};
   background-color: ${(props) => (props.error ? '#ff60551a' : 'transparent')};
+  color: ${(props) => (props.error ? '#ff6155' : '#151515')};
   font-size: 1rem;
   :focus {
-    outline: 1px solid ${(props) => (props.error ? '#ff6155' : '#000000')};
+    outline: 1px solid ${(props) => (props.error ? '#ff6155' : '#151515')};
   }
   ::placeholder {
     color: ${(props) => (props.error ? '#ff6155' : '#c5c5ca')};
