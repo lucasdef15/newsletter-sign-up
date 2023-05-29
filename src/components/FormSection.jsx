@@ -12,11 +12,14 @@ const FormWrapper = styled.section`
 
   @media (max-width: 768px) {
     width: 100vw;
+    height: 100%;
+    display: grid;
+    align-content: start;
     max-width: 470px;
     min-width: 350px;
     margin-left: 0;
     margin-inline: auto;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 5vw;
   }
 
   h1 {
@@ -44,24 +47,23 @@ const FormWrapper = styled.section`
     padding: 0;
     margin-bottom: 40px;
   }
-  ul li {
-    background: url(${iconList}) no-repeat left center;
-    background-size: 21px;
-    padding: 5px 10px 10px 37px;
+  li {
+    position: relative;
     list-style: none;
-    margin: 0;
-    vertical-align: middle;
-
-    @media (max-width: 768px) {
-      padding: 10px 5px 5px 37px;
-    }
+    margin-bottom: 1rem;
+    margin-left: 2.2rem;
+  }
+  li::before {
+    content: url(${iconList});
+    position: absolute;
+    box-sizing: border-box;
+    left: -35px;
   }
   label {
     color: #242742;
     font-weight: bold;
     font-size: 12px;
   }
-
   button {
     width: 100%;
     border: none;
