@@ -15,6 +15,7 @@ const FormWrapper = styled.section`
     max-width: 470px;
     min-width: 350px;
     margin-left: 0;
+    margin-inline: auto;
     padding: 1rem 2rem 2rem 2rem;
   }
 

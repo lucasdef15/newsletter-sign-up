@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 100vw;
     border-radius: 0px;
     padding: 0px;
@@ -32,10 +32,10 @@ const SvgWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    height: 282px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 282px;
     border-radius: 0px 0px 20px 20px;
     overflow: hidden;
   }
